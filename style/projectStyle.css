@@ -8,13 +8,18 @@
 .projects_tall {
     height: 570px;
     width: 975px;
-    animation-name: projectsGrow;
+    animation-name: projectsGrowTall;
     animation-duration: 1s;
 }
 
 @keyframes projectsGrow {
     0%      {opacity: 0; height: 0px}
     100%    {opacity: 1; height: 480px}
+}
+
+@keyframes projectsGrowTall {
+    0%      {opacity: 0; height: 0px}
+    100%    {opacity: 1; height: 570px}
 }
 
 .projects_shrunk {
