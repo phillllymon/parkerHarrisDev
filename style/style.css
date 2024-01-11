@@ -88,7 +88,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     width: 975px;
-    height: 400px;
+    height: 560px;
     animation-name: grow;
     animation-duration: 1s;
     overflow: visible;
@@ -96,7 +96,7 @@ body {
 
 @keyframes grow {
     0%      {opacity: 0; height: 0px}
-    100%    {opacity: 1; height: 400px}
+    100%    {opacity: 1; height: 560px}
 }
 
 @keyframes shrink {
