@@ -127,51 +127,133 @@
     background-size: cover;
 }
 
-.checkmatey_pic {
+#checkmatey_pic {
     border-radius: 5px;
     margin: 10px;
     float: left;
+    width: 500px;
+    height: 306px;
+    background-size: cover;
+}
+
+.checkMatey_pic0 {
     background-image: url("../images/checkMatey/checkmatey1.png");
-    width: 500px;
-    height: 306px;
-    background-size: cover;
-    animation-name: checkMatey-pic-slideshow;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-name: pic-fade-in0;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.checkMatey_pic1 {
+    background-image: url("../images/checkMatey/checkmatey3.png");
+    animation-name: pic-fade-in1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.checkMatey_pic2 {
+    background-image: url("../images/checkMatey/checkmatey2.png");
+    animation-name: pic-fade-in2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.checkMatey_pic3 {
+    background-image: url("../images/checkMatey/checkmatey4.png");
+    animation-name: pic-fade-in03;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.checkMatey_pic4 {
+    background-image: url("../images/checkMatey/checkmatey5.png");
+    animation-name: pic-fade-in4;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
-@keyframes checkMatey-pic-slideshow {
-    0%      {background-image: url("../images/checkMatey/checkmatey2.png");}
-    20%     {background-image: url("../images/checkMatey/checkmatey2.png");}
-    25%     {background-image: url("../images/checkMatey/checkmatey4.png");}
-    45%     {background-image: url("../images/checkMatey/checkmatey4.png");}
-    50%     {background-image: url("../images/checkMatey/checkmatey5.png");}
-    70%     {background-image: url("../images/checkMatey/checkmatey5.png");}
-    75%     {background-image: url("../images/checkMatey/checkmatey1.png");}
-    95%     {background-image: url("../images/checkMatey/checkmatey1.png");}
-    100%    {background-image: url("../images/checkMatey/checkmatey2.png");}
-}
-
-.graffiti_pic {
+#graffiti_pic {
     border-radius: 5px;
     margin: 10px;
     float: left;
-    /* background-image: url("../images/checkMatey/checkmatey1.png"); */
     width: 500px;
     height: 306px;
     background-size: cover;
-    animation-name: graffiti-pic-slideshow;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
 }
 
-@keyframes graffiti-pic-slideshow {
-    0%      {background-image: url("../images/graffiti/craigslistA.png");}
-    20%     {background-image: url("../images/graffiti/chessA.png");}
-    30%     {background-image: url("../images/graffiti/historyA.png");}
-    45%     {background-image: url("../images/graffiti/accountA.png");}
-    60%     {background-image: url("../images/graffiti/newsA.png");}
-    75%     {background-image: url("../images/graffiti/newA.png");}
-    90%     {background-image: url("../images/graffiti/tagA.png");}
-    100%     {background-image: url("../images/graffiti/youtubeA.png");}
+.graffiti_pic0 {
+    background-image: url("../images/graffiti/craigslistA.png");
+    animation-name: pic-fade-in0;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.graffiti_pic1 {
+    background-image: url("../images/graffiti/chessA.png");
+    animation-name: pic-fade-in1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.graffiti_pic2 {
+    background-image: url("../images/graffiti/historyA.png");
+    animation-name: pic-fade-in2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.graffiti_pic3 {
+    background-image: url("../images/graffiti/accountA.png");
+    animation-name: pic-fade-in3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.graffiti_pic4 {
+    background-image: url("../images/graffiti/newsA.png");
+    animation-name: pic-fade-in4;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.graffiti_pic5 {
+    background-image: url("../images/graffiti/newA.png");
+    animation-name: pic-fade-in5;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.graffiti_pic6 {
+    background-image: url("../images/graffiti/tagA.png");
+    animation-name: pic-fade-in6;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.graffiti_pic7 {
+    background-image: url("../images/graffiti/youtubeA.png");
+    animation-name: pic-fade-in7;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes pic-fade-in0 {
+    0%      { opacity: 0; }
+    100%     { opacity: 1; }
+}
+@keyframes pic-fade-in1 {
+    0%      { opacity: 0; }
+    100%     { opacity: 1; }
+}
+@keyframes pic-fade-in2 {
+    0%      { opacity: 0; }
+    100%     { opacity: 1; }
+}
+@keyframes pic-fade-in3 {
+    0%      { opacity: 0; }
+    100%     { opacity: 1; }
+}
+@keyframes pic-fade-in4 {
+    0%      { opacity: 0; }
+    100%     { opacity: 1; }
+}
+@keyframes pic-fade-in5 {
+    0%      { opacity: 0; }
+    100%     { opacity: 1; }
+}
+@keyframes pic-fade-in6 {
+    0%      { opacity: 0; }
+    100%     { opacity: 1; }
+}
+@keyframes pic-fade-in7 {
+    0%      { opacity: 0; }
+    100%     { opacity: 1; }
 }

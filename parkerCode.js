@@ -141,4 +141,19 @@ window.addEventListener('DOMContentLoaded', () => {
             currentProjectLink = link;
         });
     });
+
+    // animate slideshows
+    [
+        ["graffiti_pic", 7],
+        ["checkMatey_pic", 5]
+    ].forEach((picSet) => {
+        const picHolder = document.getElementById(picSet[0]);
+        let i = 0;
+        picHolder.classList.add(`${picSet[0]}${i}`);
+        setInterval(() => {
+            picHolder.classList.remove(`${picSet[0]}${i}`);
+            i = (i + 1) % picSet[1];
+            picHolder.classList.add(`${picSet[0]}${i}`);
+        }, 3000);
+    });
 });
