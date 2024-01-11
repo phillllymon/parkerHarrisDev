@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <link href="./reset.css" type="text/css" rel="stylesheet">
-    <link href="./pics.css" type="text/css" rel="stylesheet">
-    <link href="./projectStyle.css" type="text/css" rel="stylesheet">
-    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="./style/reset.css" type="text/css" rel="stylesheet">
+    <link href="./style/pics.css" type="text/css" rel="stylesheet">
+    <link href="./style/projectStyle.css" type="text/css" rel="stylesheet">
+    <link href="./style/style.css" type="text/css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="boat.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="parkerCode.js"></script>
@@ -26,16 +26,12 @@
         <div class="pic">
         </div>
         <div class="row">
-            <a href="https://www.linkedin.com/in/parker-harris-04613b16/" target="_blank">
-                <div class="linkedIn_pic">
-                </div>
-            </a>
-            <a href="https://angel.co/parker-harris-2" target="_blank">
-                <div class="angelList_pic">
-                </div>
-            </a>
             <a href="https://github.com/phillllymon" target="_blank">
                 <div class="github_pic">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/parker-harris-04613b16/" target="_blank">
+                <div class="linkedIn_pic">
                 </div>
             </a>
         </div>
@@ -82,16 +78,84 @@
     <div id="projects_total" class="projects_total hidden_project">
     
         <div id="project_row" class="projects_header">
+            <div id="graffitiLink" class="project_name">GRAFFITI</div>
+            <div id="chessMoveLink" class="project_name">SimpleChessMove</div>
             <div id="checkMateyLink" class="project_name">CheckMatey</div>
             <div id="windWavesLink" class="project_name">Wind & Waves</div>
             <div id="dontDieLink" class="project_name">Don't Die Together!</div>
+        </div>
+
+        <div id="graffiti" class="project_description hidden_project">
+            <div class="graffiti_pic">
+            </div>
+            <div class="project_links">
+                <a href="https://graffiti.red/" target="_blank">live</a>
+                <div class="border"></div>
+                <a href="https://github.com/phillllymon/graffiti" target="_blank">github</a>
+            </div>
+            <div class="project_title">
+                GRAFFITI
+            </div>
+            <br>
+            GRAFFITI is a Chrome extension that allows users to leave and view comments on any webpage.
+            <br>
+            <br>
+            Have you ever wanted to discuss a craigslist ad with your neighbors who are probably viewing the same ad? Ever
+            been frustrated that a youtube video has comments turned off? Ever been taken down a long signup process only
+            to discover that it's a scam, and then wished for a way to warn other users on the first page?
+            <br>
+            <br>
+            With GRAFFITI, you can interact with other users anywhere on the internet with a comment section that
+            will pop up when you click the extension button. Of course, it's entirely opt-in. Only people with the
+            extension can see or make comments so if you prefer browser alone, just continue to do so.
+            <br>
+            <br>
+            The only stable version of GRAFFITI is for Chrome desktop, but a mobile version for Chromium based browsers,
+            such as <a href="https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=en_US&gl=US&pli=1">Kiwi</a>, is currently
+            under development. Future work includes mobile versions for Firefox and Safari. 
+            <br>
+            <br>
+            The extension is written with JavaScript. The backend is an API built with PHP and utilizing a SQL database.
+        </div>
+
+        <div id="chessMove" class="project_description hidden_project">
+            <div class="chessMove_pic">
+            </div>
+            <div class="project_links">
+                <a href="https://phillllymon.github.io/simpleChess/" target="_blank">live</a>
+                <div class="border"></div>
+                <a href="https://github.com/phillllymon/chessMove" target="_blank">github</a>
+            </div>
+            <div class="project_title">
+                SimpleChessMove
+            </div>
+            <br>
+            SimpleChessMove is a public-facing chess API that can suggest a move for a given game state
+            or evaulate if a move is legal.
+            <br>
+            <br>
+            In school in 2019, I built an extensive chess website based on Chess.com, but writing the chess logic was a
+            tedious task that seemed unnecessary. Why wasn't there an API that would do the majority of the heavy lifting
+            for me?
+            <br>
+            <br>
+            Now there is. Just send your game state to the SimpleChessMove api and it will suggest a move. You can select
+            from five different ai levels, which correspond directly to how many moves ahead the algorithm will look. It
+            can handle any move including castleing, en passant, and pawn promotion.
+            <br>
+            <br>
+            You can also use the API to evaluate if a move is legal, allowing you to write your own chess frontend with minimal
+            need to write your own chess logic.
+            <br>
+            <br>
+            SimpleChessMove is built with PHP. The frontend demo is vanilla JavaScript and css.
         </div>
 
         <div id="checkMatey" class="project_description hidden_project">
             <div class="checkMatey_pic">
             </div>
             <div class="project_links">
-                <a href="https://checkmatey.herokuapp.com/#/" target="_blank">live</a>
+                <div class="notLive"><i>not live</i></div>
                 <div class="border"></div>
                 <a href="https://github.com/phillllymon/checkMatey" target="_blank">github</a>
             </div>
@@ -153,7 +217,7 @@
             <div class="zombie_pic">
             </div>
             <div class="project_links">
-                <a href=http://dont-die-together.herokuapp.com/#/ target="_blank">live</a>
+                <div class="notLive"><i>not live</i></div>
                 <div class="border"></div>
                 <a href=https://github.com/nairieberry/dont-die-together target="_blank">github</a>
             </div>
@@ -179,7 +243,7 @@
         </div>
     </div>
     <div id="shortContent" class="short_content">
-        <span class="black_text">Skills: </span>Ruby / Rails, Javascript, React, Redux, SQL, PHP, HTML / CSS
+        <span class="black_text">Skills: </span>Javascript, React, Redux, Ruby / Rails, PHP, SQL, HTML / CSS
     </div>
     <div class="seattle_pic">
     </div>

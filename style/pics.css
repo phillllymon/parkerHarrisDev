@@ -1,0 +1,98 @@
+.pic {
+    background-image: url("../images/me/portrait.png");
+    height: 180px;
+    width: 180px;
+    border-radius: 90px;
+    background-size: cover;
+    background-position: top;
+    box-shadow: 0 2px 12px -5px rgba(0, 0, 0, 1);
+}
+
+.seattle_pic {
+    background-image: url("../images/background/seattle.png");
+    height: 239px;
+    width: 975px;
+    background-size: cover;
+    z-index: -1;
+}
+
+.teaching_pic {
+    float: right;
+    background-image: url("../images/me/teaching.png");
+    height: 237px;
+    width: 197px;
+    margin: 10px;
+    border-radius: 5px;
+    background-size: cover;
+    box-shadow: 0 2px 12px -5px rgba(0, 0, 0, 1);
+}
+
+.sanding_pic {
+    float: left;
+    background-image: url("../images/me/sanding.png");
+    height: 216px;
+    width: 215px;
+    margin: 10px;
+    border-radius: 5px;
+    background-size: cover;
+    box-shadow: 0 2px 12px -5px rgba(0, 0, 0, 1);
+}
+
+.sailing_pic {
+    float: left;
+    background-image: url("../images/me/sailing.png");
+    height: 207px;
+    width: 273px;
+    margin: 10px;
+    border-radius: 5px;
+    background-size: cover;
+    box-shadow: 0 2px 12px -5px rgba(0, 0, 0, 1);
+}
+
+.linkedIn_pic {
+    background-image: url("../images/icons/linkedinPic.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    opacity: 0.6;
+}
+
+.linkedIn_pic:hover {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 12px -5px rgba(0, 0, 0, 1);
+}
+
+.angelList_pic {
+    background-image: url("../images/icons/angellistPic.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    opacity: 0.6;
+}
+
+.angelList_pic:hover {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 12px -5px rgba(0, 0, 0, 1);
+}
+
+.github_pic {
+    background-image: url("../images/icons/githubPic.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    opacity: 0.6;
+}
+
+.github_pic:hover {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 12px -5px rgba(0, 0, 0, 1);
+}

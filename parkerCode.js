@@ -27,12 +27,17 @@ window.addEventListener('DOMContentLoaded', () => {
     let checkMateyLink = document.getElementById("checkMateyLink");
     let checkMateyProject = document.getElementById("checkMatey");
     let windWavesLink = document.getElementById("windWavesLink");
+    let graffitiLink = document.getElementById("graffitiLink");
+    let chessMoveLink = document.getElementById("chessMoveLink");
+
     let windWavesProject = document.getElementById("windWaves");
     let dontDieLink = document.getElementById("dontDieLink");
     let dontDieProject = document.getElementById("dontDieTogether");
+    let graffitiProject = document.getElementById("graffiti");
+    let chessMoveProject = document.getElementById("chessMove");
 
-    let currentProject = checkMateyProject;
-    let currentProjectLink = checkMateyLink;
+    let currentProject = graffitiProject;
+    let currentProjectLink = graffitiLink;
 
     document.getElementById("homeLink").addEventListener('click', () => {
         document.getElementById(currentLink).classList.remove("linkIshSpecial");
@@ -103,53 +108,32 @@ window.addEventListener('DOMContentLoaded', () => {
         
         currentProjectLink.classList.remove("specialProject");
         
-        checkMateyLink.classList.add("specialProject");
-        checkMatey.classList.remove("hidden_project");
-        currentProject = checkMateyProject;
-        currentProjectLink = checkMateyLink;
+        graffitiLink.classList.add("specialProject");
+        graffitiProject.classList.remove("hidden_project");
+        currentProject = graffitiProject;
+        currentProjectLink = graffitiLink;
     });
-
-
     
-
-
-    checkMateyLink.addEventListener('click', () => {
-        if (currentProject) {
-            currentProject.classList.add("hidden_project");
-        }
-        if (currentProjectLink) {
-            currentProjectLink.classList.remove("specialProject");
-        }
-        checkMateyLink.classList.add("specialProject");
-        checkMatey.classList.remove("hidden_project");
-        currentProject = checkMateyProject;
-        currentProjectLink = checkMateyLink;
+    [
+        [checkMateyLink, checkMateyProject],
+        [windWavesLink, windWavesProject],
+        [dontDieLink, dontDieProject],
+        [graffitiLink, graffitiProject],
+        [chessMoveLink, chessMoveProject]
+    ].forEach((projectSet) => {
+        const link = projectSet[0];
+        const project = projectSet[1];
+        link.addEventListener("click", () => {
+            if (currentProject) {
+                currentProject.classList.add("hidden_project");
+            }
+            if (currentProjectLink) {
+                currentProjectLink.classList.remove("specialProject");
+            }
+            link.classList.add("specialProject");
+            project.classList.remove("hidden_project");
+            currentProject = project;
+            currentProjectLink = link;
+        });
     });
-
-    windWavesLink.addEventListener('click', () => {
-        if (currentProject) {
-            currentProject.classList.add("hidden_project");
-        }
-        if (currentProjectLink) {
-            currentProjectLink.classList.remove("specialProject");
-        }
-        windWavesLink.classList.add("specialProject");
-        windWaves.classList.remove("hidden_project");
-        currentProject = windWavesProject;
-        currentProjectLink = windWavesLink;
-    });
-
-    dontDieLink.addEventListener('click', () => {
-        if (currentProject) {
-            currentProject.classList.add("hidden_project");
-        }
-        if (currentProjectLink) {
-            currentProjectLink.classList.remove("specialProject");
-        }
-        dontDieLink.classList.add("specialProject");
-        dontDieProject.classList.remove("hidden_project");
-        currentProject = dontDieProject;
-        currentProjectLink = dontDieLink;
-    });
-
 });
