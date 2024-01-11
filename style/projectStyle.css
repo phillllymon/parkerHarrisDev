@@ -5,6 +5,13 @@
     animation-duration: 1s;
 }
 
+.projects_tall {
+    height: 570px;
+    width: 975px;
+    animation-name: projectsGrow;
+    animation-duration: 1s;
+}
+
 @keyframes projectsGrow {
     0%      {opacity: 0; height: 0px}
     100%    {opacity: 1; height: 480px}

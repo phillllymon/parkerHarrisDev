@@ -39,6 +39,8 @@ window.addEventListener('DOMContentLoaded', () => {
     let currentProject = graffitiProject;
     let currentProjectLink = graffitiLink;
 
+    const projectsSection = document.getElementById("projects_total");
+
     document.getElementById("homeLink").addEventListener('click', () => {
         document.getElementById(currentLink).classList.remove("linkIshSpecial");
         currentLink = 'homeLink';
@@ -115,15 +117,18 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     
     [
-        [checkMateyLink, checkMateyProject],
-        [windWavesLink, windWavesProject],
-        [dontDieLink, dontDieProject],
-        [graffitiLink, graffitiProject],
-        [chessMoveLink, chessMoveProject]
+        [checkMateyLink, checkMateyProject, "projects_total"],
+        [windWavesLink, windWavesProject, "projects_total"],
+        [dontDieLink, dontDieProject, "projects_total"],
+        [graffitiLink, graffitiProject, "projects_tall"],
+        [chessMoveLink, chessMoveProject, "projects_tall"]
     ].forEach((projectSet) => {
         const link = projectSet[0];
         const project = projectSet[1];
         link.addEventListener("click", () => {
+            projectsSection.classList.remove("projects_total");
+            projectsSection.classList.remove("projects_tall");
+            projectsSection.classList.add(projectSet[2]);
             if (currentProject) {
                 currentProject.classList.add("hidden_project");
             }
