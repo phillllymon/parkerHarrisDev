@@ -39,9 +39,10 @@
     padding-bottom: 30px;
     border-bottom: 2px solid black;
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; */
+    text-align: center;
 }
 
 .projects {
