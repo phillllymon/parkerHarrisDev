@@ -1,5 +1,6 @@
 .pic {
-    background-image: url("../images/me/portrait.png");
+    /* background-image: url("../images/me/portrait.png"); */
+    background-image: url("../images/me/outside_head.png");
     height: 180px;
     width: 180px;
     border-radius: 90px;

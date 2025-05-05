@@ -52,20 +52,20 @@
     <div id="bio" class="bioHidden">
         <div class="teaching_pic">
         </div>
-        I've been coding for over a decade since I built my first PHP website for a gas delivery business. Since then,
-        I've expanded my knowledge to include, among other things, Python, Ruby / Rails, Javascript / Typescript, and React.
-        I delight in the puzzle of figuring out how to integrate a front and back end as smoothly as possible. I've worked
-        on various personal projects and webapps over the years and then, 5 years ago, decided to turn to coding as a full time
-        career.
+        I've been coding for over a decade since I built my first PHP website for a gasoline delivery business. Since then,
+        I've expanded my knowledge to include, among other things, JavaScript / TypeScript, Ruby / Rails, React, and Python.
+        I delight in the puzzle of figuring out how to integrate a front and back end as smoothly as possible. I worked
+        on various personal projects and webapps over the years before turning to coding as a full time career in 2019.
         <br>
         <br>
         After graduating from the super-competitive bootcamp App Academy, I worked for Amazon Web Services for three and a half years.
-        Recently I've been working on GRAFFITI, a Chrome extension that lets you interact with other users on any web page, and a mobile
-        rhythm game, Beatburner, that auto-generates tile-tapping levels from any music. I hope
-        you take a moment to look at some of my projects.
+        Recently I've been working on an app to time and manage sailboat races and a mobile
+        rhythm game, Beat Burner, that auto-generates tile-tapping levels from any music. I hope
+        you take a moment to look at some of my projects. It's been over a year since I left Amazon and, though I love the creative freedom
+        that comes with focusing on my own projects, I'm ready to join a team again. 
         <br>
         <br>
-        Before becoming a full time software engineer, I was a mechanical engineer and a teacher. 
+        Before becoming a full time software engineer, I was a mechanical engineer and a teacher.
         I've taught middle and high-schoolers math, science, and philosophy and coached a fledgeling
         robotics team as they went to their first state competition. On the engineering side I've worked 
         for New York State improving building energy efficiency
@@ -79,7 +79,7 @@
         impossible at first or if others have tried and failed, I'm interested.
         <br>
         <br>
-        When I'm not coding I like to spend my time sailing, building boats, and playing the flute.  
+        When I'm not coding I like to spend my time sailing, playing chess, and building boats.  
         </div>
         
         
@@ -120,38 +120,84 @@
         </div>
 
         <div id="beatBurner" class="project_description hidden_project">
-            <div id="beat_burner_pic">
+            <div class="beat_burner_pic">
             </div>
             <div class="project_links">
-                <a href="https://graffiti.red/" target="_blank">live</a>
+                <a href="https://beatburner.com/" target="_blank">live</a>
                 <div class="border"></div>
-                <a href="https://github.com/phillllymon/graffiti" target="_blank">github</a>
+                <a href="https://github.com/phillllymon/beatburner" target="_blank">github</a>
             </div>
             <div class="project_title">
                 Beat Burner
             </div>
             <br>
-            Beat Burner is pretty cool
+            Beat Burner is a mobile & web tile-tapping style rhythm game that you can play with any music!
             <br>
             <br>
+            Rhythm games are tedious to create and sourcing music for the game is an inherent problem. Beat Burner tackles
+            both of these problems: You can use any music that you have access to, and levels are auto-generated.  
+            <br>
+            <br>
+            In addition to 50 built-in songs, you can play Beat Burner with music from any of three other sources:
+            directly uploaded, live radio, or streaming through your computer. Effectively - if you can listen to it,
+            you can play it in the game.
+            <br>
+            <br>
+            Uploaded songs can be .m4a or .mp3 and the game will auto-generate levels in real-time as you play, so there's
+            no need to wait around while the algorithm does its magic. Beatburner taps into live radio using streaming links;
+            nearly every radio station has one. Currently there are several stations with different genres to choose from. The ability
+            to enter a custom streaming url is an upcoming feature.
+            <br>
+            <br>
+            An experimental feature of BeatBurner is the ability to bring music streamed from your computer directly to the game. This
+            works with a <a href="https://vb-audio.com/Cable/">utility</a> for routing your computers sound to its microphone and then
+            listening to the microphone. The app forms a peer-to-peer connection with your computer through a Beat Burner webpage
+            and streams your computer audio to the game where it's analyzed in real time while you play.
+            <br>
+            <br>
+            Beat Burner is written in JavaScript and compiled into a mobile app using Capacitor. The small backend is written in PHP.
             
         </div>
 
         <div id="regattaMaster" class="project_description hidden_project">
-            <div id="regatta_master_pic">
+            <div class="regatta_master_pic">
             </div>
             <div class="project_links">
-                <a href="https://graffiti.red/" target="_blank">live</a>
+                <a href="https://regattamaster.boats/" target="_blank">live</a>
                 <div class="border"></div>
-                <a href="https://github.com/phillllymon/graffiti" target="_blank">github</a>
+                <a href="https://github.com/phillllymon/sloopTimer" target="_blank">github</a>
             </div>
             <div class="project_title">
                 Regatta Master
             </div>
             <br>
-            Regatta Master is pretty cool
+            Regatta Master is a web app for timing and managing sailboat races.
             <br>
             <br>
+            Running a sailboat is a tedious task involving checking boats in, setting various classes and start
+            times, adjusting those start times, and siting the line for boats that are over early. Then at the finish, it's
+            necessary to site the line, identify the crossing boats, glance at a clock to note the time, and then
+            write down each boat's exact finish time. It's a stressful job and usually requires coordination of several team
+            members with clipboards all working together.
+            <br>
+            <br>
+            Regatta Master handles the stress for you so you can run a race without pressures like keeping track of which
+            boats have checked in or simultaneously siting the finish line while also looking at a clock. It's all organized
+            in the app. Different classes can be set to start at different times and it manages the different countdowns at
+            the same time. There's an easy feature for calling boats over early and then clearing them once they return to re-start.
+            <br>
+            <br>
+            Once boats are approaching the finishing line, simply select them from the list, stage them for finish, then
+            tap them as they cross - no need to look at a clock as manually record the time yourself. 
+            <br>
+            <br>
+            You can pre-load all boat information by entering boats one at a time or by uploading spreadsheets that already
+            contain the information. You can even fetch the file directly from a server; no need to download then upload it
+            to the app. Once the race is complete, the app will generate a .csv file with the results. 
+            <br>
+            <br>
+            The Regatta Master web app is written in TypeScript useing React. The upcoming mobile apps will be created from
+            slightly altered versions of the web app using Capacitor.
             
         </div>
 

@@ -100,7 +100,7 @@ window.addEventListener('DOMContentLoaded', () => {
         document.getElementById(currentLink).classList.remove("linkIshSpecial");
         currentLink = 'projectsLink';
         document.getElementById(currentLink).classList.add("linkIshSpecial");
-        mainTitle.innerHTML = "Projects:";
+        mainTitle.innerHTML = "Projects / Technologies";
         shortContent.innerHTML = ''
         shrinkBio();
         shrinkResume();
