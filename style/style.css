@@ -128,6 +128,12 @@ iframe {
     animation-duration: 1s;
 }
 
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 @keyframes resGrow {
     0%      {opacity: 0; height: 0px}
     100%    {opacity: 1; height: 1150px}

@@ -29,15 +29,19 @@ window.addEventListener('DOMContentLoaded', () => {
     let windWavesLink = document.getElementById("windWavesLink");
     let graffitiLink = document.getElementById("graffitiLink");
     let chessMoveLink = document.getElementById("chessMoveLink");
+    let regattaMasterLink = document.getElementById("regattaMasterLink");
+    let beatBurnerLink = document.getElementById("beatBurnerLink");
 
     let windWavesProject = document.getElementById("windWaves");
     let dontDieLink = document.getElementById("dontDieLink");
     let dontDieProject = document.getElementById("dontDieTogether");
     let graffitiProject = document.getElementById("graffiti");
     let chessMoveProject = document.getElementById("chessMove");
+    let regattaMasterProject = document.getElementById("regattaMaster");
+    let beatBurnerProject = document.getElementById("beatBurner");
 
-    let currentProject = graffitiProject;
-    let currentProjectLink = graffitiLink;
+    let currentProject = regattaMasterProject;
+    let currentProjectLink = regattaMasterLink;
 
     const projectsSection = document.getElementById("projects_total");
 
@@ -110,18 +114,20 @@ window.addEventListener('DOMContentLoaded', () => {
         
         currentProjectLink.classList.remove("specialProject");
         
-        graffitiLink.classList.add("specialProject");
-        graffitiProject.classList.remove("hidden_project");
-        currentProject = graffitiProject;
-        currentProjectLink = graffitiLink;
+        regattaMasterLink.classList.add("specialProject");
+        regattaMasterProject.classList.remove("hidden_project");
+        currentProject = regattaMasterProject;
+        currentProjectLink = regattaMasterLink;
     });
     
     [
-        [checkMateyLink, checkMateyProject, "projects_total"],
-        [windWavesLink, windWavesProject, "projects_total"],
-        [dontDieLink, dontDieProject, "projects_total"],
+        [checkMateyLink, checkMateyProject, "projects_tall"],
+        [windWavesLink, windWavesProject, "projects_tall"],
+        [dontDieLink, dontDieProject, "projects_tall"],
         [graffitiLink, graffitiProject, "projects_tall"],
-        [chessMoveLink, chessMoveProject, "projects_tall"]
+        [chessMoveLink, chessMoveProject, "projects_tall"],
+        [regattaMasterLink, regattaMasterProject, "projects_tall"],
+        [beatBurnerLink, beatBurnerProject, "projects_tall"]
     ].forEach((projectSet) => {
         const link = projectSet[0];
         const project = projectSet[1];

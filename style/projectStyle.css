@@ -1,12 +1,12 @@
 .projects_total {
     width: 975px;
-    height: 480px;
+    height: 600px;
     animation-name: projectsGrow;
     animation-duration: 1s;
 }
 
 .projects_tall {
-    height: 570px;
+    height: 900px;
     width: 975px;
     animation-name: projectsGrowTall;
     animation-duration: 1s;
@@ -14,12 +14,12 @@
 
 @keyframes projectsGrow {
     0%      {opacity: 0; height: 0px}
-    100%    {opacity: 1; height: 480px}
+    100%    {opacity: 1; height: 600px}
 }
 
 @keyframes projectsGrowTall {
     0%      {opacity: 0; height: 0px}
-    100%    {opacity: 1; height: 570px}
+    100%    {opacity: 1; height: 900px}
 }
 
 .projects_shrunk {
@@ -31,7 +31,7 @@
 }
 
 @keyframes projectsShrink {
-    0%      {opacity: 1; height: 480px}
+    0%      {opacity: 1; height: 600px}
     100%    {opacity: 0; height: 0px}
 }
 
@@ -39,10 +39,19 @@
     padding-bottom: 30px;
     border-bottom: 2px solid black;
     width: 100%;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around; */
-    text-align: center;
+    justify-content: center;
+}
+
+.left {
+    text-align: left;
+    padding-left: 2vw;
+    border-left: 1px solid black;
+}
+.right {
+    text-align: right;
+    padding-right: 2vw;
 }
 
 .projects {
