@@ -1,257 +1,107 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="./style/reset.css" type="text/css" rel="stylesheet">
-    <link href="./style/pics.css" type="text/css" rel="stylesheet">
-    <link href="./style/projectStyle.css" type="text/css" rel="stylesheet">
-    <link href="./style/style.css" type="text/css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="boat.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <script src="parkerCode.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Parker Harris — software developer. Former AWS engineer, independent developer, sailor, and builder.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Parker Harris — Software Developer</title>
+  <link rel="icon" href="boat.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css?v=17">
+  <script src="parkerCode.js?v=11" defer></script>
 </head>
-
 <body>
-    
-    
-    <div style="height:100px">
-    </div>
-    <div class="top_row">
-        <div class="menu">
-            <div class="linkIsh linkIshSpecial" id="homeLink">home</div>
-            <div class="linkIsh" id="contactLink">contact</div>
-            <div class="linkIsh" id="projectsLink">projects</div>
-            <div class="linkIsh" id="resumeLink">resume</div>
-            <div class="linkIsh" id="bioLink">bio</div>
-        </div>
-        <div class="pic">
-        </div>
-        <div class="row">
-            <a href="https://github.com/phillllymon" target="_blank">
-                <div class="github_pic">
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/parker-harris-04613b16/" target="_blank">
-                <div class="linkedIn_pic">
-                </div>
-            </a>
-        </div>
-    </div>
-    <div id="mainTitle" class="title_text">
-        
-        Parker Harris
-        
-    </div>
-    <div id="resume" class="resumeHidden">
-        <iframe
-            src="resume.pdf"
-            width="975px"
-            height="1150px"
-        >
-        </iframe>
-    </div>
-    <div id="bio" class="bioHidden">
-        <div class="teaching_pic">
-        </div>
-        I'm a software developer with a background that also includes mechanical engineering and teaching. 
-        I've taught middle and high-schoolers math, science, and philosophy and coached a fledgeling
-        robotics team as they went to their first state competition. On the engineering side I've worked 
-        for New York State improving building energy efficiency
-        and designed custom tooling for the manufacture of large aircraft. 
-        <br>
-        <br>
-        I thrive on tackling complex problems, especially in a cooperative environment. Effective technical 
-        communication and problem solving is the common theme throughout my career of coding,
-        engineering, and teaching. If something seems
-        impossible at first or if others have tried and failed, I'm interested.
-        <br>
-        <br>
-        <div class="sailing_pic">
-        </div>
-        In October I graduated from the super-rigorous coding bootcamp App Academy, where I learned Ruby, Rails, SQL,
-        Javascript, and React. That experience was intense and rewarding. Despite my background in teaching, I did not
-        think it was possible to learn so much in four months! I hope you take a minute to check out my projects.
-        <br>
-        <br>
-        When I'm not coding I like to spend my time sailing, building boats, and playing the flute.  
-        
-    </div>
-    <div id="projects_total" class="projects_total hidden_project">
-    
-        <div id="project_row" class="projects_header">
-            <div id="raceProLink" class="project_name">RacePRO</div>
-            <div id="beatBurnerLink" class="project_name">Beat Burner</div>
-            <div id="bogglerLink" class="project_name">Boggler</div>
-            <div id="graffitiLink" class="project_name">GRAFFITI</div>
-            <div id="chessMoveLink" class="project_name">SimpleChessMove</div>
-            <div id="checkMateyLink" class="project_name">CheckMatey</div>
-            <div id="windWavesLink" class="project_name">Wind & Waves</div>
-            <div id="dontDieLink" class="project_name">Don't Die Together!</div>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="masthead">
+      <nav class="menu" aria-label="Main navigation">
+        <a href="#home" data-page="home">home</a>
+        <a href="#work" data-page="work">projects</a>
+        <a href="#experience" data-page="experience">experience</a>
+        <a href="#contact" data-page="contact">contact</a>
+        <a href="#bio" data-page="bio">bio</a>
+      </nav>
+      <div class="identity"><h1 id="home-title"><a href="#home">Parker Harris</a></h1><ul class="identity-details"><li>Former AWS identity engineer</li><li>Independent developer</li><li>Builder at heart</li></ul></div>
+      <div class="social-links">
+        <a href="https://github.com/phillllymon" target="_blank" rel="noopener noreferrer"><img src="images/icons/githubPic.png" alt="" width="25" height="25"><span>github ↗</span></a>
+        <a href="https://www.linkedin.com/in/parker-harris-04613b16/" target="_blank" rel="noopener noreferrer"><img src="images/icons/linkedinPic.png" alt="" width="25" height="25"><span>linkedin ↗</span></a>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-panel home-panel" id="home" aria-labelledby="home-title">
+        <p class="availability">Open to software development roles</p>
+        <div class="home-links"><a href="#work">view projects <span aria-hidden="true">→</span></a><a href="#contact">contact me <span aria-hidden="true">→</span></a></div>
+      </section>
+      <section class="page-panel" id="work" aria-labelledby="work-title">
+        <div class="section-heading"><h2 id="work-title">Projects</h2></div>
+        <nav class="project-categories" aria-label="Project categories"><a href="#software" data-category="software">Software</a><a href="#other-projects" data-category="other-projects">Other cool stuff</a></nav>
+<section class="project-category" id="software" aria-labelledby="software-title"><h3 class="category-heading" id="software-title">Software</h3><div class="project-layout"><nav class="project-nav" aria-label="Choose a project"><a href="#racemate" data-project="racemate">RACEMATE</a><a href="#beatburner" data-project="beatburner">BeatBurner</a><a href="#graffiti" data-project="graffiti">GRAFFITI</a><a href="#windwaves" data-project="windwaves">Wind &amp; Waves</a><a href="#checkmatey" data-project="checkmatey">CheckMatey</a><a href="#chessmove" data-project="chessmove">SimpleChessMove</a><a href="#dontdietogether" data-project="dontdietogether">Don’t Die Together!</a><a href="#boggler" data-project="boggler">Boggler</a><a href="#connections2" data-project="connections2">Connections²</a></nav><div class="project-details"><article class="project" id="racemate"><div class="project-heading"><div class="project-title-group"><h3>RACEMATE</h3><ul class="title-technologies" aria-label="Technologies"><li>TypeScript</li><li>React</li><li>Express</li><li>AI-assisted development</li></ul></div><div class="project-links original-links"><a href="https://www.racemate.boats/" target="_blank" rel="noopener noreferrer">live</a><span class="link-divider" aria-hidden="true"></span><a href="https://github.com/phillllymon/racemate" target="_blank" rel="noopener noreferrer">github</a></div></div><div class="project-gallery" aria-label="RACEMATE images"><a class="gallery-slide" href="images/portfolio/racemate-6.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/racemate-6.jpg" alt="RACEMATE — image 1 of 7" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/racemate-3.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/racemate-3.jpg" alt="RACEMATE — image 2 of 7" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/racemate-4.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/racemate-4.jpg" alt="RACEMATE — image 3 of 7" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/racemate-7.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/racemate-7.jpg" alt="RACEMATE — image 4 of 7" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/racemate-5.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/racemate-5.jpg" alt="RACEMATE — image 5 of 7" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/racemate-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/racemate-1.jpg" alt="RACEMATE — image 6 of 7" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/racemate-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/racemate-2.jpg" alt="RACEMATE — image 7 of 7" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div><div class="project-copy"><p>RACEMATE is a web app for managing sailboat races, from checking boats in to calculating final results.</p><p>Race committees often work with clipboards and stopwatches. Recording finishes can take three people: one to watch boats cross the line, one to call out times, and another to write everything down. RACEMATE lets an operator stage approaching boats in a short, reorderable list, then tap each boat as it crosses to record its finish time.</p><p>The app also guides the start sequence with a countdown and timed reminders, records boats that cross the starting line early, and calculates corrected times and results using the selected scoring method.</p><p>I’m developing RACEMATE with Seattle’s Center for Wooden Boats, where it is already being used to manage races. Feedback from the race committee is driving an ongoing effort to make the interface more intuitive and handle unexpected actions—such as recording a finish before a race has started—without producing inconsistent results.</p><p>RACEMATE has also been a hands-on education in AI-assisted development. I’ve used Claude Code extensively and learned that it works best when I first lay out the design, work through the data flow, and make specific implementation requests. I use AI to help build the app while keeping responsibility for product decisions and how the pieces fit together.</p></div></article>
+<article class="project" id="beatburner"><div class="project-heading"><div class="project-title-group"><h3>BeatBurner</h3><ul class="title-technologies" aria-label="Technologies"><li>JavaScript</li><li>Web Audio</li><li>Capacitor</li><li>PHP</li></ul></div><div class="project-links original-links"><a href="https://beatburner.com/" target="_blank" rel="noopener noreferrer">live</a><span class="link-divider" aria-hidden="true"></span><a href="https://github.com/phillllymon/beatburner" target="_blank" rel="noopener noreferrer">github</a></div></div><div class="project-gallery" aria-label="BeatBurner images"><a class="gallery-slide" href="images/portfolio/beatburner-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/beatburner-1.jpg" alt="BeatBurner — image 1 of 3" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/beatburner-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/beatburner-2.jpg" alt="BeatBurner — image 2 of 3" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/beatburner-3.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/beatburner-3.jpg" alt="BeatBurner — image 3 of 3" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div><div class="project-copy"><p>I built BeatBurner because I enjoy rhythm games and wanted to play with my own music. It uses JavaScript’s Audio Context to analyze audio and generate playable levels, synchronizing moving tiles with the music.</p><p>Automatically generating rhythm-game levels from multiple audio sources presented a host of engineering challenges. For example, the live radio feature streams music from online sources, but the incoming audio wasn’t directly compatible with JavaScript’s Audio Context analysis tools.</p><p>To solve this, I built a pipeline that divides the stream into ten-second chunks, plays and records each chunk internally without audible output, and analyzes the recording to generate tiles. The audio then plays to the user with a delay, synchronized with the moving tiles. This process runs continuously, making the separate clips sound like one uninterrupted stream.</p><p>Keeping all those pieces synchronized—including when a player pauses and resumes the game—was a significant challenge, but the kind of challenge I thrive on. It’s incredibly satisfying to see all the moving parts of a complex system come together.</p><p>BeatBurner supports built-in songs, user-uploaded music, live radio, and audio sent through a connected computer—including music from streaming services.</p></div></article>
+<article class="project" id="graffiti"><div class="project-heading"><div class="project-title-group"><h3>GRAFFITI</h3><ul class="title-technologies" aria-label="Technologies"><li>JavaScript</li><li>PHP</li><li>SQL</li><li>Browser extensions</li></ul></div><div class="project-links original-links"><a href="https://graffiti.red/" target="_blank" rel="noopener noreferrer">live</a><span class="link-divider" aria-hidden="true"></span><a href="https://github.com/phillllymon/graffiti" target="_blank" rel="noopener noreferrer">github</a></div></div><div class="project-gallery" aria-label="GRAFFITI images"><a class="gallery-slide" href="images/portfolio/graffiti-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/graffiti-1.jpg" alt="GRAFFITI — image 1 of 8" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/graffiti-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/graffiti-2.jpg" alt="GRAFFITI — image 2 of 8" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/graffiti-3.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/graffiti-3.jpg" alt="GRAFFITI — image 3 of 8" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/graffiti-4.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/graffiti-4.jpg" alt="GRAFFITI — image 4 of 8" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/graffiti-5.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/graffiti-5.jpg" alt="GRAFFITI — image 5 of 8" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/graffiti-6.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/graffiti-6.jpg" alt="GRAFFITI — image 6 of 8" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/graffiti-7.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/graffiti-7.jpg" alt="GRAFFITI — image 7 of 8" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/graffiti-8.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/graffiti-8.jpg" alt="GRAFFITI — image 8 of 8" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div><div class="project-copy"><p>GRAFFITI is a browser extension that adds a shared comment section to any webpage. It was my first major independent project after leaving AWS, revisiting an idea I originally built more than a decade earlier.</p><p>The idea started with Craigslist. If I went to see an item for sale, I wanted to leave useful context for other buyers: “Looks great in person,” or “The photos don’t show its current condition.” I couldn’t add features to Craigslist itself, but I could store comments separately, associate them with page URLs, and retrieve them through an extension whenever someone visited that page.</p><p>GRAFFITI takes that idea beyond classifieds. I built the extension’s interface and a PHP API backed by a SQL database, focusing on making the commenting experience clear and easy to use. The architecture was straightforward; the satisfying work was bringing the design and interactions together into a finished product.</p><p>GRAFFITI is live and available to use. It works well, and I’m proud of the finished product's clean interface and smooth integration of features.</p></div></article>
+<article class="project" id="windwaves"><div class="project-heading"><div class="project-title-group"><h3>Wind &amp; Waves</h3><ul class="title-technologies" aria-label="Technologies"><li>JavaScript</li><li>React</li><li>Canvas</li></ul></div><div class="project-links original-links"><a href="https://phillllymon.github.io/Wind-Waves/" target="_blank" rel="noopener noreferrer">live</a><span class="link-divider" aria-hidden="true"></span><a href="https://github.com/phillllymon/Wind-Waves" target="_blank" rel="noopener noreferrer">github</a></div></div><figure class="project-video"><video controls muted loop playsinline preload="metadata" aria-label="Wind and Waves sailing simulation demo" aria-describedby="windwaves-video-caption"><source src="images/portfolio/windwaves-demo.mp4" type="video/mp4">Your browser does not support embedded video. <a href="images/portfolio/windwaves-demo.mp4">Watch the demo</a>.</video><figcaption id="windwaves-video-caption">Wind &amp; Waves in motion. Press play to watch the simulation.</figcaption></figure><div class="project-copy"><p>OK this one really brings out my inner nerd and channels my former life as a high school physics teacher. The forces that make a sailboat work are the subject of a surprising amount of debate, even among sailors.</p><p>I built this simulator to illustrate those forces - you steer a boat around the screen and you can see, in real time, arrows representing the forces on the hull, sail, and centerboard. And it's not just a diagram over a boat graphic; underlying the boat's motion is a physics model using those exact forces to calculate acceleration.</p><p>This one is an oldie but a goodie - I still love how I was able to write a simulation using JavaScript and basic physics and the result moves surprisingly like a real boat.</p></div><details class="project-screenshots"><summary>View screenshots</summary><div class="project-gallery" aria-label="Wind &amp; Waves images"><a class="gallery-slide" href="images/portfolio/windwaves-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/windwaves-1.jpg" alt="Wind &amp; Waves — image 1 of 2" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/windwaves-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/windwaves-2.jpg" alt="Wind &amp; Waves — image 2 of 2" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div></details></article>
+<article class="project" id="checkmatey"><div class="project-heading"><div class="project-title-group"><h3>CheckMatey</h3><ul class="title-technologies" aria-label="Technologies"><li>Ruby on Rails</li><li>React</li><li>Redux</li></ul></div><div class="project-links original-links"><a href="https://checkmatey.onrender.com/#/home" target="_blank" rel="noopener noreferrer">live</a><span class="link-divider" aria-hidden="true"></span><a href="https://github.com/phillllymon/checkMatey" target="_blank" rel="noopener noreferrer">github</a></div></div><div class="project-gallery" aria-label="CheckMatey images"><a class="gallery-slide" href="images/portfolio/checkmatey-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/checkmatey-1.jpg" alt="CheckMatey — image 1 of 5" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/checkmatey-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/checkmatey-2.jpg" alt="CheckMatey — image 2 of 5" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/checkmatey-3.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/checkmatey-3.jpg" alt="CheckMatey — image 3 of 5" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/checkmatey-4.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/checkmatey-4.jpg" alt="CheckMatey — image 4 of 5" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/checkmatey-5.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/checkmatey-5.jpg" alt="CheckMatey — image 5 of 5" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div><div class="project-copy"><p>Who hasn't wished for a pirate-themed chess website?</p><p>Inspired by chess.com, CheckMatey is a fully-functional online community for chess players with multi-player functionality as well as single-player games against the computer. There's also a community forum where you can share your chess or pirate-related thoughts with other players. You can even use the move-recording feature to share that new opening you just invented.</p><p>If your opponent's not online when you want to play, just use the "invite a friend" feature to challenge your friend via email. If you're still online when your friend clicks the link, you'll automatically be put in a game together. Of course, if you prefer Tetris to chess, we've also got you covered.</p><p>CheckMatey has a Ruby on Rails backend and a React & Redux frontend.</p></div></article>
+<article class="project" id="chessmove"><div class="project-heading"><div class="project-title-group"><h3>SimpleChessMove</h3><ul class="title-technologies" aria-label="Technologies"><li>PHP</li><li>JavaScript</li><li>CSS</li></ul></div><div class="project-links original-links"><a href="https://phillllymon.github.io/simpleChess/" target="_blank" rel="noopener noreferrer">live</a><span class="link-divider" aria-hidden="true"></span><a href="https://github.com/phillllymon/chessMove" target="_blank" rel="noopener noreferrer">github</a></div></div><div class="project-gallery" aria-label="SimpleChessMove images"><a class="gallery-slide" href="images/portfolio/chessmove-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/chessmove-2.jpg" alt="SimpleChessMove — image 1 of 1" loading="lazy" decoding="async"></a></div><div class="project-copy"><p>Projects such as <a href="#checkmatey">CheckMatey</a> made me wish for a publicly facing chess API, but I couldn't find one. Why isn't there a simple endpoint where I can describe a game state and it suggests a move?</p><p>So I built one. It's a public facing API for chess - you can use SimpleChessMove to either suggest a move or to check if a move is legal. This way anyone building a chess application online doesn't have to implement the chess logic - why solve that problem more than once?</p><p>The user interface is simple: just a chess board where you can play against the computer. More interesting is the detailed documentation for use of the API and the section that allows you to adjust parameters and query the API to simulate what your own chess application will do. The algorithm is simple: it looks ahead the requested number of moves, maximizing the piece point advantage or, if possible, winning the game. Check it out and see if you can beat level 4 or 5.</p></div></article>
+<article class="project" id="dontdietogether"><div class="project-heading"><div class="project-title-group"><h3>Don’t Die Together!</h3><ul class="title-technologies" aria-label="Technologies"><li>JavaScript</li><li>React</li><li>Canvas</li><li>MongoDB</li><li>Socket.IO</li></ul></div><div class="project-links original-links"><span class="not-live">not live</span><span class="link-divider" aria-hidden="true"></span><a href="https://github.com/nairieberry/dont-die-together" target="_blank" rel="noopener noreferrer">github</a></div></div><div class="project-gallery" aria-label="Don’t Die Together! images"><a class="gallery-slide" href="images/portfolio/dontdietogether-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/dontdietogether-1.jpg" alt="Don’t Die Together! — image 1 of 1" loading="lazy" decoding="async"></a></div><div class="project-copy"><p>Don't Die Together! is a top-down, multiplayer zombie survival game. You start off with a pistol and, with zombies closing in from all sides, you must survive as long as possible. You can invite your friends to play in the same game with you, but be careful: the more players there are, the more zombies arrive!</p><p>Don't Die Together! uses MongoDB on the back end and React on the front end. Multiplayer functionality is through Socket.IO. The game rendering uses HTML5 canvas.</p><p>Other collaborators on this project are <a href="https://www.linkedin.com/in/ryan-s-4bab01194">Ryan Sabik</a>, <a href="https://www.linkedin.com/in/wesley-tam-436b98127/">Wesley Tam</a>, and <a href="https://www.linkedin.com/in/ryan-sullivan-32080223/">Ryan Sullivan</a>.</p></div></article>
+<article class="project" id="boggler"><div class="project-heading"><div class="project-title-group"><h3>Boggler</h3><ul class="title-technologies" aria-label="Technologies"><li>React</li><li>TypeScript</li></ul></div><div class="project-links original-links"><a href="https://graffiti.red/boggler/build/" target="_blank" rel="noopener noreferrer">live</a><span class="link-divider" aria-hidden="true"></span><a href="https://github.com/phillllymon/boggler" target="_blank" rel="noopener noreferrer">github</a></div></div><div class="project-gallery" aria-label="Boggler images"><a class="gallery-slide" href="images/portfolio/boggler-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/boggler-1.jpg" alt="Boggler — image 1 of 1" loading="lazy" decoding="async"></a></div><div class="project-copy"><p>A customizable Boggle game for finding words in a grid of letters. Play a generated board, enter words, and reveal the answers when you want to see what you missed.</p><p>You can also upload your own letter grid and customize the word list. Built with React and TypeScript.</p></div></article>
+<article class="project" id="connections2"><div class="project-heading"><div class="project-title-group"><h3>Connections²</h3><ul class="title-technologies" aria-label="Technologies"><li>React</li><li>TypeScript</li></ul></div><div class="project-links original-links"><a href="https://www.connectionsconnections.com/" target="_blank" rel="noopener noreferrer">live</a><span class="link-divider" aria-hidden="true"></span><a href="https://github.com/phillllymon/connectionsconnections" target="_blank" rel="noopener noreferrer">github</a></div></div><div class="project-gallery" aria-label="Connections² images"><a class="gallery-slide" href="images/portfolio/connections2-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/connections2-1.jpg" alt="Connections² — image 1 of 1" loading="lazy" decoding="async"></a></div><div class="project-copy"><p>Based on NYT’s Connections game, but with the ability to create custom puzzles and send them to your friends!</p></div></article></div></div></section>
+<section class="project-category" id="other-projects" aria-labelledby="other-projects-title"><h3 class="category-heading" id="other-projects-title">Other cool stuff</h3><div class="project-layout"><nav class="project-nav" aria-label="Choose a project"><a href="#dinghy7" data-project="dinghy7">7ft sailing dinghy</a><a href="#dinghy13" data-project="dinghy13">13ft sailing dinghy</a><a href="#van" data-project="van">Van conversion</a><a href="#boxtruck" data-project="boxtruck">Box truck conversion</a><a href="#chesstable" data-project="chesstable">Chess table</a><a href="#oilpainting" data-project="oilpainting">Oil painting</a></nav><div class="project-details"><article class="project" id="dinghy7"><div class="project-heading"><h3>7ft sailing dinghy</h3></div><div class="project-gallery" aria-label="7ft sailing dinghy images"><a class="gallery-slide" href="images/portfolio/7ftdinghy-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/7ftdinghy-1.jpg" alt="7ft sailing dinghy — image 1 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/7ftdinghy-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/7ftdinghy-2.jpg" alt="7ft sailing dinghy — image 2 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/7ftdinghy-3.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/7ftdinghy-3.jpg" alt="7ft sailing dinghy — image 3 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/7ftdinghy-4.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/7ftdinghy-4.jpg" alt="7ft sailing dinghy — image 4 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/7ftdinghy-5.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/7ftdinghy-5.jpg" alt="7ft sailing dinghy — image 5 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/7ftdinghy-6.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/7ftdinghy-6.jpg" alt="7ft sailing dinghy — image 6 of 6" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div><div class="project-copy"><p>I designed this tiny sailing dinghy to act as the tender for a larger boat. My goal for the project was to build a boat light enough I could pick it up and carry it around myself and capable of carrying up to 3 people and being rowed, sailed, or motored. I was super happy with the resulting boat. She is made of 1/8" and 1/4" marine plywood sheathed in fiberglass.</p></div></article>
+<article class="project" id="dinghy13"><div class="project-heading"><h3>13ft sailing dinghy</h3></div><div class="project-gallery" aria-label="13ft sailing dinghy images"><a class="gallery-slide" href="images/portfolio/13footdinghy-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/13footdinghy-1.jpg" alt="13ft sailing dinghy — image 1 of 2" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/13footdinghy-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/13footdinghy-2.jpg" alt="13ft sailing dinghy — image 2 of 2" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div><div class="project-copy"><p>I had the idea for this boat in college: a hull made of foam and covered in fiberglass with a thin wooden deck. I thought it would be the simplest sailboat to build. Well, I built it but it turning into a much bigger project than expected. I eventually launched the boat with my good friend Dave and later sailed her to Fisher's Island, around two miles off the coast of Connecticut.</p></div></article>
+<article class="project" id="van"><div class="project-heading"><h3>Van conversion</h3></div><div class="project-gallery" aria-label="Van conversion images"><a class="gallery-slide" href="images/portfolio/fordvan-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/fordvan-1.jpg" alt="Van conversion — image 1 of 1" loading="lazy" decoding="async"></a></div><div class="project-copy"><p>My first van conversion. I started with a 1992 Ford Econoline 350 cargo van and built a custom interior. Despite the small space, I managed to fit a full sized bed, a tiny bathroom with a shower, a fridge, hot and cold running water with a propane instant water heater, and a fridge. I even built a cat door for my orange tabby, Spark.</p></div></article>
+<article class="project" id="boxtruck"><div class="project-heading"><h3>Box truck conversion</h3></div><div class="project-gallery" aria-label="Box truck conversion images"><a class="gallery-slide" href="images/boxTruck/PXL_20250224_213502299.jpg" target="_blank" rel="noopener noreferrer"><img src="images/boxTruck/PXL_20250224_213502299.jpg" alt="Box truck conversion — image 1 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/boxTruck/PXL_20250224_213743714.jpg" target="_blank" rel="noopener noreferrer"><img src="images/boxTruck/PXL_20250224_213743714.jpg" alt="Box truck conversion — image 2 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/boxTruck/PXL_20250224_213751718.jpg" target="_blank" rel="noopener noreferrer"><img src="images/boxTruck/PXL_20250224_213751718.jpg" alt="Box truck conversion — image 3 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/boxTruck/PXL_20250224_213834557.MP.jpg" target="_blank" rel="noopener noreferrer"><img src="images/boxTruck/PXL_20250224_213834557.MP.jpg" alt="Box truck conversion — image 4 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/boxTruck/PXL_20250224_214221887.jpg" target="_blank" rel="noopener noreferrer"><img src="images/boxTruck/PXL_20250224_214221887.jpg" alt="Box truck conversion — image 5 of 6" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/boxTruck/PXL_20250224_214636965.MP.jpg" target="_blank" rel="noopener noreferrer"><img src="images/boxTruck/PXL_20250224_214636965.MP.jpg" alt="Box truck conversion — image 6 of 6" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div><div class="project-copy"><p>Building on skills I developed building my <a href="#van"><em>van conversion</em></a> I converted this former uhaul truck over the course of two years starting in 2020. Although the overall length is almost identical to the cargo van, the box width and height meant I could fit far more amenities. It's insulated on the floor, walls, and ceiling with 2" R10 foam and features a propane heating system as well as a tiny wood stove - it's fantastic for winter trips.</p><p>I was working from home for AWS at the time, so I knew I needed a big desk with plenty of power so I included 600 amphours of battery which could be charged by plugging in, running the enginer, or from 200 watts of rooftop solar. In addition to the main, full sized bed there's a couch that easily converts to a single bed or a table, a galley with propane stove, microwave, and a big sink, and a bathroom with tiled floor and a shower. The pressurized hot and cold running water is supplied by 80 gallons of fresh water storage.</p><p>Building this truck is one of my favorite projects. Figuring out how to integrate systems such as plumbing, propane, and electrical and getting them to all work together in a space that feels warm and inviting was a wonderful challenge. I've driven this truck all over the country and lived in it quite comfortably (along with my cat!) for several months at a time.</p></div></article>
+<article class="project" id="chesstable"><div class="project-heading"><h3>Chess table</h3></div><div class="project-gallery" aria-label="Chess table images"><a class="gallery-slide" href="images/portfolio/chesstable-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/chesstable-1.jpg" alt="Chess table — image 1 of 2" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/chesstable-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/chesstable-2.jpg" alt="Chess table — image 2 of 2" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div><div class="project-copy"><p>I build this wooden chess table several years ago and I'm still quite proud of it. Most of the wood is mahogony, while the chess surface itself is maple for the light squares and walnut for the dark squares. There's also a thin purple heart border around the chess board area. The surface looks inlaid, but the tabletop is actualling made of plywood with the squares and bordering wood glued in place.</p></div></article>
+<article class="project" id="oilpainting"><div class="project-heading"><h3>Oil painting</h3></div><div class="project-gallery" aria-label="Oil painting images"><a class="gallery-slide" href="images/portfolio/oilpainting-1.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/oilpainting-1.jpg" alt="Oil painting — image 1 of 3" loading="lazy" decoding="async"></a>
+<a class="gallery-slide" href="images/portfolio/oilpainting-2.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/oilpainting-2.jpg" alt="Oil painting — image 2 of 3" loading="lazy" decoding="async"></a><a class="gallery-slide" href="images/portfolio/oilpainting-3.jpg" target="_blank" rel="noopener noreferrer"><img src="images/portfolio/oilpainting-3.jpg" alt="Oil painting — image 3 of 3" loading="lazy" decoding="async"></a><div class="gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="Next image">→</button></div></div><div class="project-copy"><p>For the last few years I've started painting with oil paints. Here are a few of my favorite paintings.</p></div></article></div></div></section>
+      </section>
+    <section class="page-panel" id="experience" aria-labelledby="experience-title"><div><div class="section-heading"><h2 id="experience-title">Experience</h2></div>
+      <div class="experience-row"><div class="experience-meta"><span>2023 — PRESENT</span><h3>Independent Developer</h3><p>Multiple projects using React, JavaScript/TypeScript, backend frameworks, and AI-assisted development</p></div><div class="experience-description"><p>Since leaving AWS to pursue personal projects, I’ve built, among other things, web applications, mobile games, and browser extensions. I have particularly enjoyed that working independently has given me room to experiment—from using JavaScript’s audio tools to generate rhythm-game levels to incorporating AI-assisted development into my workflow, every new tool I learn has fueled my excitement for the future.</p><p>My current project is working with Seattle’s Center for Wooden Boats on an app for managing sailboat races. My time working independently has been a blast, but I miss the collaborative aspects of being part of a team and I’m now ready to find my next position. I hope you take a moment to look at some of the recent <a href="#work">projects</a>.</p></div></div>
+      <div class="experience-row"><div class="experience-meta"><span>MAR 2020 — SEP 2023</span><h3>Amazon Web Services</h3><p>Frontend Software Engineer<br>Identity & Access Management</p></div><div class="experience-description"><p>As a member of a small team in the AWS identity organization, I worked to upgrade, maintain, and monitor the Identity and Access Management web console. This involved migrating frontend components from Angular to React, working with designers and backend engineers to add new features, and deploying the IAM console to AWS’s ever-growing network of regions across the globe.</p><p>Every new component I wrote was accompanied by unit tests, and the console was continually monitored for errors or downtime. I participated in week-long on-call rotations, responsible for quickly responding to high-severity events and working with engineers across many teams to diagnose and fix problems.</p><div class="case-study"><h4>AWS account automation</h4><p>I personally designed and implemented a system to manage hundreds of internal AWS accounts across 25+ regions. The IAM console relied on other AWS services and was deployed to multiple servers across AWS regions. Each region required multiple accounts for deployments, testing, and continuous monitoring, with separate accounts for individual processes.</p><p>I created a series of scripts to manage these accounts through a single entry point for defining which regions to deploy in and what each region needed. The system iterated over those regions and requirements, retrieving existing accounts or creating and provisioning new ones as needed.</p><p>This system significantly reduced the manual work required to deploy our web console across AWS’s growing collection of regions.</p></div></div></div>
+      <div class="experience-row"><div class="experience-meta"><span>OCT 2014 — JAN 2016</span><h3>Gas Magic LLC</h3><p>Founder & Owner</p></div><div class="experience-description"><p>I founded Gas Magic, a membership-based gasoline delivery service in Seattle. I designed and built the software that supported the business, including user authentication, delivery scheduling, member communications, and tools for tracking employee hours and pay.</p><div class="tags"><span>PHP</span><span>SQL</span><span>HTML / CSS</span></div></div></div>
+    </div></section>
 
-        <div id="graffiti" class="project_description hidden_project">
-            <div class="graffiti_pic">
-            </div>
-            <div class="project_links">
-                <a href="https://graffiti.red/" target="_blank">live</a>
-                <div class="border"></div>
-                <a href="https://github.com/phillllymon/graffiti" target="_blank">github</a>
-            </div>
-            <div class="project_title">
-                GRAFFITI
-            </div>
-            <br>
-            GRAFFITI is a Chrome extension that allows users to leave and view comments on any webpage.
-            <br>
-            <br>
-            Have you ever wanted to discuss a craigslist ad with your neighbors who are probably viewing the same ad? Ever
-            been frustrated that a youtube video has comments turned off? Ever been taken down a long signup process only
-            to discover that it's a scam, and then wished for a way to warn other users on the first page?
-            <br>
-            <br>
-            With GRAFFITI, you can interact with other users anywhere on the internet with a comment section that
-            will pop up when you click the extension button. Of course, it's entirely opt-in. Only people with the
-            extension can see or make comments so if you prefer browser alone, just continue to do so.
-            <br>
-            <br>
-            The only stable version of GRAFFITI is for Chrome desktop, but a mobile version for Chromium based browsers,
-            such as <a href="https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=en_US&gl=US&pli=1">Kiwi</a>, is currently
-            under development. Future work includes mobile versions for Firefox and Safari. 
-            <br>
-            <br>
-            The extension is written with JavaScript. The backend is an API built with PHP and utilizing a SQL database.
-        </div>
 
-        <div id="chessMove" class="project_description hidden_project">
-            <div class="chessMove_pic">
-            </div>
-            <div class="project_links">
-                <a href="https://phillllymon.github.io/simpleChess/" target="_blank">live</a>
-                <div class="border"></div>
-                <a href="https://github.com/phillllymon/chessMove" target="_blank">github</a>
-            </div>
-            <div class="project_title">
-                SimpleChessMove
-            </div>
-            <br>
-            SimpleChessMove is a public-facing chess API that can suggest a move for a given game state
-            or evaulate if a move is legal.
-            <br>
-            <br>
-            In school in 2019, I built an extensive chess website based on Chess.com, but writing the chess logic was a
-            tedious task that seemed unnecessary. Why wasn't there an API that would do the majority of the heavy lifting
-            for me?
-            <br>
-            <br>
-            Now there is. Just send your game state to the SimpleChessMove api and it will suggest a move. You can select
-            from five different ai levels, which correspond directly to how many moves ahead the algorithm will look. It
-            can handle any move including castleing, en passant, and pawn promotion.
-            <br>
-            <br>
-            You can also use the API to evaluate if a move is legal, allowing you to write your own chess frontend with minimal
-            need to write your own chess logic.
-            <br>
-            <br>
-            SimpleChessMove is built with PHP. The frontend demo is vanilla JavaScript and css.
-        </div>
-
-        <div id="checkMatey" class="project_description hidden_project">
-            <div class="checkMatey_pic">
-            </div>
-            <div class="project_links">
-                <div class="notLive"><i>not live</i></div>
-                <div class="border"></div>
-                <a href="https://github.com/phillllymon/checkMatey" target="_blank">github</a>
-            </div>
-            <div class="project_title">
-                CheckMatey
-            </div>
-            <br>
-            Who hasn't wished for a pirate-themed chess website?
-            <br>
-            <br>
-            Inspired by
-            chess.com, CheckMatey is a fully-functional online community
-            for chess players with multi-player functionality as well as
-            single-player games against the computer. There's also
-            a community forum where you can share your chess or pirate-related
-            thoughts with other players. You can even use the move-recording feature
-            to share that new opening you just invented.
-            <br>
-            <br>
-            If your
-            opponent's not online when you want to play, just use the "invite a friend"
-            feature to challenge your friend via email. If you're still
-            online when your friend clicks the link, you'll automatically
-            be put in a game together. Of course, if you prefer Tetris to chess,
-            we've also got you covered.
-            <br>
-            <br>
-            CheckMatey has a Ruby on Rails backend and a React & Redux frontend.
-        </div>
-
-        <div id="windWaves" class="project_description hidden_project">
-            <div class="windWaves_pic">
-            </div>
-            <div class="project_links">
-                <a href="https://phillllymon.github.io/Wind-Waves/" target="_blank">live</a>
-                <div class="border"></div>
-                <a href="https://github.com/phillllymon/Wind-Waves" target="_blank">github</a>
-            </div>
-            <div class="project_title">
-                Wind & Waves
-            </div>
-            <br>
-            Wind & Waves is an interactive sailing simulator that allows you to
-            learn the basics of sailing a small boat while also investigating
-            the various forces that make sailing possible.
-            <br>
-            <br>
-            Under the hood, Wind & Waves features a physics model
-            that combines forces on the sail, hull, and centerboard to calculate
-            accurate, real-time boat motion. It even calculates rolling
-            motion, incorporating a sailor whose weight moves
-            automatically to balance the boat.
-            <br>
-            <br>
-            All the physics modeling is coded in pure javascript. The display
-            in HTML5 Canvas and components are rendered with React.
-        </div>
-        <div id="dontDieTogether" class="project_description hidden_project">
-            <div class="zombie_pic">
-            </div>
-            <div class="project_links">
-                <div class="notLive"><i>not live</i></div>
-                <div class="border"></div>
-                <a href=https://github.com/nairieberry/dont-die-together target="_blank">github</a>
-            </div>
-            <div class="project_title">
-                Don't Die Together!
-            </div>
-            <br>
-            Don't Die Together! is a top-down, multiplayer zombie survival game. You
-            You start off with a pistol and, with zombies closing in from all sides, you
-            must survive as long as possible. You can invite your friends to play in the
-            same game with you, but be careful: the more players there are, the more zombies
-            arrive!
-            <br>
-            <br>
-            Don't Die Together! uses MongoDB on the back end and React on the front end. Multiplayer
-            functionality is through Socket.IO. The game rendering uses HTML5 canvas.
-            <br>
-            <br>
-            Other collaborators on this poject are
-            <a href="https://www.linkedin.com/in/ryan-s-4bab01194">Ryan Sabik</a>,
-            <a href="https://www.linkedin.com/in/wesley-tam-436b98127/">Wesley Tam</a>, and
-            <a href="https://www.linkedin.com/in/ryan-sullivan-32080223/">Ryan Sullivan</a>.
-        </div>
-    </div>
-    <div id="shortContent" class="short_content">
-        <span class="black_text">Skills: </span>Javascript, React, Redux, Ruby / Rails, PHP, SQL, HTML / CSS
-    </div>
-    <div class="seattle_pic">
-    </div>
-    
-    
+      <section class="page-panel" id="bio" aria-labelledby="bio-title">
+        <div class="section-heading"><h2 id="bio-title">Hi, I’m Parker.</h2></div>
+        <div class="bio-content"><img class="bio-photo" src="images/me/sailing.png" alt="Parker sailing" loading="lazy"><div><p>I'm a software developer with a background that also includes mechanical engineering and teaching. Over the course of my diverse career I've taught middle and high schoolers math, science, and philosophy and coached a fledgeling student robotics team as they went to their first state competition. On the engineering side I've designed custom tooling for the manufacture of large aircraft and worked for New York State improving building energy efficiency.</p><p>I've been a coder since I first programmed Lego robots when I got my first computer at age 10. Before turning to software full time I worked on numerous web projects including building a complex system for a gasoline delivery business involing user accounts, tools to schedule and manage deliveries, and keeping track of employee hours and pay.</p><p>In 2019 I graduated from the super-competitive coding bootcamp App Academy and shortly after started as a frontend engineer at AWS, where I worked for three and a half years before leaving to pursue independent projects. Since then I've build numerous web applications, small games and apps, and learned several new technologies. I'm building my latest project, an app to assist with running sailboat races, using AI assistance and I am blown away by the capabilities. What an exciting time to be alive!</p><p>When I'm not coding I spend my time sailing, playing chess, and doing and doing various projects such as converting a box truck to an rv or building a small boat. I'm a builder at heart, and I'm always looking for my next challenge.</p></div></div>
+        <div class="education"><h3>Education</h3><p>App Academy · Full Stack Web Development<br>Clarkson University · MS, Engineering Management<br>Union College · BS, Mechanical Engineering & BA, Philosophy</p></div>
+      </section>
+      <section class="page-panel contact-panel" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p>I’m looking for my next software development role.</p><a class="email" href="mailto:rparkerharris@gmail.com">rparkerharris@gmail.com ↗</a><a class="phone" href="tel:+18027607970">802–760–7970</a></section>
+    </main>
+    <footer class="site-footer"><div class="skyline-scene" aria-hidden="true"><img class="skyline" src="images/background/seattle.png" alt="" width="975" height="239"><div class="sail-drift"><svg class="sailboat" viewBox="0 0 64 65" focusable="false"><path d="M26 5 C42 18 53 38 58 54 L30 55 Z"/><path d="M23 14 C13 25 7 39 6 55 L24 52 C20 40 21 26 23 14 Z"/><path d="M11 59 L62 58 L55 65 L19 65 Z"/></svg></div></div><div class="footer-note"><span>Parker Harris</span><button class="motion-toggle" type="button" aria-pressed="false" hidden>Pause sails</button><a href="mailto:rparkerharris@gmail.com">say hello ↗</a></div></footer>
+  </div>
 </body>
-
 </html>
